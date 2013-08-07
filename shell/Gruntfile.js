@@ -5,6 +5,12 @@ module.exports = function(grunt){
             show: {
                 command: 'echo "Hello World" '
             },
+            multi: {
+                command: [
+                    'echo cmd 1',
+                    'echo cmd 2'
+                ].join('&&')
+            },
             options:{
                 stdout:true
             }
