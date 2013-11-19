@@ -5,7 +5,13 @@ module.exports = function(grunt){
             all: {
                 src: './images/my-icon/*.png',
                 destImg: 'dest/images/all.png',
-                destCSS: 'dest/css/sprite.css'
+                destCSS: 'dest/css/sprite.css',
+                algorithm: 'binary-tree',
+               // cssTemplate: 'css/main.css',
+                cssVarMap: function(sprite) {
+                console.log(sprite)
+                    sprite.name = 'example-'+sprite.name;
+                }
             },
         }    
     });
