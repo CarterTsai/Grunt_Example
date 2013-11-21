@@ -8,17 +8,6 @@ module.exports = function(grunt){
     grunt.initConfig({
         app : appConfig,
         pkg: grunt.file.readJSON('package.json'), 
-       // copy: {
-       //     dist: {
-       //         files: [{
-       //             expand: true,
-        //            dot: true,
-         //           cwd: '<%= app.app %>',
-         //           dest: '<%= app.dist %>',
-         //           src: ['js/{,*/}*.js']
-         //       }]
-         //   }
-       // },
         htmlmin: {
             dist: {
                files: [{
